@@ -483,6 +483,8 @@ if __name__ == '__main__':
     parser.add_argument('--project', default='runs/train', help='save to project/name')
     parser.add_argument('--name', default='exp', help='save to project/name')
     parser.add_argument('--exist-ok', action='store_true', help='existing project/name ok, do not increment')
+    #custom argument
+    parser.add_argument('--label_number', type=str, default='26', help='label number of object')
     opt = parser.parse_args()
 
     # Set DDP variables
